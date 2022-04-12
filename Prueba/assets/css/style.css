@@ -1,0 +1,113 @@
+/*
+Los modelos de Bootstrap vienen por defecto con la propiedad schroll-behavior: smooth;
+Si deseamos quitársela debemos agregar la palabra !importan a un costado de la característica.
+
+schroll-behavior: auto; !important;
+Así se anula la propiedad Bootstrap.
+
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+
+
+#mundo {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    width: 25px;
+}
+
+
+.navbar {
+    *background-color: aqua;
+    position: fixed;
+    width: 100vw;
+    /* que abarque todo el ancho */
+    z-index: 1;
+}
+
+
+
+
+
+#carrusel {
+    background-image: url("../img/carousel1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+/* sección sobre mi, acá cambiamos el color de todos los elementos de la sección*/
+#Sobre mi {
+    background-color: rgb(0, 4, 5);
+    font-family: "Open Sans";
+}
+
+.Sobre mi h1 {
+    text-align: justify;
+    line-height: 3;
+}
+
+
+
+
+
+/* mi experiencia */
+#Destacados {
+    font-family: "Oswald";
+    font-size: 52px;
+}
+
+#Experiencia i {
+    color: rgb(126, 196, 214);
+}
+
+#Experiencia div:last-child article h4:first-child {
+    font-family: "Oswald";
+}
+
+#Experiencia div:last-child article h4:last-child {
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+/* mis últimos trabajos */
+
+#Trabajos {
+    font-family: "Open Sans";
+    background-color: #660066;
+}
+
+#Trabajos h1 {
+    font-size: 52px;
+}
+
+
+/* contacto */
+#Contacto h1 {
+    font-family: "Oswald";
+    font-size: 52px;
+}
+
+
+/* footer */
+
+#footer {
+    background-color: #660066;
+}
+
+footer h1 {
+    font-family: "Oswald";
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
