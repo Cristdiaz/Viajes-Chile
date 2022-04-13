@@ -1,16 +1,22 @@
-/*
-Los modelos de Bootstrap vienen por defecto con la propiedad schroll-behavior: smooth;
-Si deseamos quitársela debemos agregar la palabra !importan a un costado de la característica.
-
-schroll-behavior: auto; !important;
-Así se anula la propiedad Bootstrap.
+/* font-family: 'Raleway', sans-serif; *
 
 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Oswald', sans-serif;
- */
+ /* Para hacer cambio en scroll */
+ html {
+     scroll-behavior: smooth;
+ }
+
+hr {
+    
+}
 
 
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* logo */
 #mundo {
     text-decoration: none;
     list-style-type: none;
@@ -18,21 +24,20 @@ font-family: 'Oswald', sans-serif;
     width: 25px;
 }
 
-
 .navbar {
     *background-color: aqua;
     position: fixed;
     width: 100vw;
     /* que abarque todo el ancho */
     z-index: 1;
+    color: #fff;
 }
 
 
 
 
-
+/* sección carrusel */
 #carrusel {
-    background-image: url("../img/carousel1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,71 +48,63 @@ font-family: 'Oswald', sans-serif;
 
 
 
-
-/* sección sobre mi, acá cambiamos el color de todos los elementos de la sección*/
-#Sobre mi {
-    background-color: rgb(0, 4, 5);
-    font-family: "Open Sans";
-}
-
-.Sobre mi h1 {
+/* sección Quienes somos */
+#Quienes-somos {
     text-align: justify;
-    line-height: 3;
+}
+
+#Quienes-somos h1 {
+    font-family:'Raleway', sans-serif;
+    font-size: 30px;
 }
 
 
 
-
-
-/* mi experiencia */
-#Destacados {
-    font-family: "Oswald";
-    font-size: 52px;
+/* destacados */
+#Destacados h1 {
+    font-size: 30px;
 }
 
-#Experiencia i {
-    color: rgb(126, 196, 214);
+.card-body {
+    font-size: 10px; 
+    color: #fff;
+    height: 9rem;
 }
 
-#Experiencia div:last-child article h4:first-child {
-    font-family: "Oswald";
+.card-body .card-title {
+    font-size: 14px;
+    font-weight: bold;
 }
 
-#Experiencia div:last-child article h4:last-child {
-    font-family: "Open Sans";
-    font-weight: 300;
-}
-
-/* mis últimos trabajos */
-
-#Trabajos {
-    font-family: "Open Sans";
-    background-color: #660066;
-}
-
-#Trabajos h1 {
-    font-size: 52px;
-}
 
 
 /* contacto */
 #Contacto h1 {
-    font-family: "Oswald";
-    font-size: 52px;
+    font-size: 30px;
 }
+
+.datos {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.boton {
+    text-align: start;
+    box-shadow: 0px 6px 0px;
+}
+
 
 
 /* footer */
 
-#footer {
-    background-color: #660066;
-}
-
-footer h1 {
-    font-family: "Oswald";
+#footer .h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
 }
+

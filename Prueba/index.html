@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2? family=Open+Sans:wght@300;400;600&family=Oswald:wght@200;400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2? family=Raleway:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Viajes Chile</title>
@@ -23,11 +22,13 @@
 
 
 
+
 <body>
-    <nav class="navbar navbar-expand-lg text-white">
+    <!-- sección navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <img id="mundo" src="assets/img/viajes.svg" alt="logo">
-            <a class="navbar-brand" href="#">Viajes Chile</a>
+            <a class="navbar-brand text-white" href="#">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,16 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="Inicio">Inicio</a>
+                        <a class="nav-link text-white" href="#Inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Destacados">Destacados</a>
+                        <a class="nav-link text-white" href="#Quienes-somos">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Quienes somos">Quienes somos</a>
+                        <a class="nav-link text-white" href="#Destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contacto">Contacto</a>
+                        <a class="nav-link text-white" href="#Contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -53,18 +54,19 @@
     </nav>
 
 
-    <section id="carrusel">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- sección carrusel -->
+    <header id="Inicio">
+        <div id="carouselExampleControls" class="carousel slidep b-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100 fa-5x" alt="alpacas">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="isla-pascua">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="pinguino">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -78,80 +80,80 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </section>
+    </header>
 
 
 
-
-
+    <!-- sección Quienes somos -->
     <!-- d-none para que desaparezca, y en tamaño sm la sección tomará forma de bloque -->
-    <section id="Inicio" class="pt-5 container d-none d-sm-block">
+    <section id="Quienes-somos" class="pt-5 pb-4 container d-none d-sm-block">
         <div>
-            <h1 class="fw-bold text-uppercase text-center pt-3">¿QUIÉNES SOMOS?</h1>
+            <h1 class="fw-200 text-uppercase text-center text-white pt-3">¿QUIÉNES SOMOS?</h1>
             <!-- uppercase es para que aunque el texto esté escrito en minúscula, sea presentado en mayúscula -->
-            <hr class="w-70 mx-auto">
+            <hr class="w-70 mx-auto text-white">
         </div>
 
         <div class="row pt-5 d-justify">
             <div class="col-sm-4">
-                <i class="fa-solid fa-plane fa-2x"></i>
-                <p>
+                <!-- pa-2x es el tamaño del icono, w-100 es el tamaño de su espacio (había probado con pd pero no funcionaba), texto-blanco y texto-centrado -->
+                <i id="avion" class="fa-solid fa-plane fa-2x bg-info w-100 text-white text-center py-1"
+                    data-bs-toggle="tooltip" data-bs-placement="left" title="Viajes"></i>
+                <!-- Icono con tooltip -->
+                <p class="text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, animi rerum voluptate
                     suscipit eos nihil cumque, a quaerat facilis unde, atque ab veniam vel odio non architecto illo
-                    neque?
+                    neque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi tenetur illo porro!
+                    Dignissimos praesentium ducimus ipsa sit iste magni, reprehenderit similique, voluptate repellat,
+                    autem atque natus officiis nihil ipsum eveniet?
                 </p>
             </div>
             <div class="col-sm-4">
-                <p>
+                <p class="text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, animi rerum voluptate
                     suscipit eos nihil cumque, a quaerat facilis unde, atque ab veniam vel odio non architecto illo
-                    neque?
+                    neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quod odit assumenda
+                    quibusdam, quisquam iusto. Porro asperiores harum modi, blanditiis quis libero quae quidem, fugit
+                    voluptatibus enim praesentium exercitationem!
                 </p>
-                <i class="fa-solid fa-mountain fa-2x "></i>
+                <i class="fa-solid fa-mountain fa-2x bg-info w-100 text-white text-center py-1" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Hospedaje"></i>
+                <!-- Icono con tooltip -->
             </div>
-            <div class="col-4">
-                <i class="fa-solid fa-route fa-2x"></i>
-                <p>
+            <div class="col-sm-4">
+                <i class="fa-solid fa-route fa-2x bg-info w-100 text-white text-center py-1" data-bs-toggle="tooltip"
+                    data-bs-placement="right" title="Mapas y rutas"></i>
+                <!-- Icono con tooltip -->
+                <p class="text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, animi rerum voluptate
                     suscipit eos nihil cumque, a quaerat facilis unde, atque ab veniam vel odio non architecto illo
-                    neque?
+                    neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi ut tempore aut incidunt
+                    atque perferendis, velit provident sunt quia blanditiis ipsum debitis commodi fugit similique
+                    consequatur repellendus odit nisi?
                 </p>
             </div>
     </section>
 
 
 
-    <section id="Destacados">
+
+    <section id="Destacados" class="container-fluid pt-4 pb-5">
         <div>
-            <h1 class="fw-bold text-uppercase text-center pt-3">DESTACADOS</h1>
-            <hr class="w-70 mx-auto">
-        </div>
-
-
-
-    </section>
-
-
-
-
-    <section id="Trabajos" class="py-5">
-        <div>
-            <h1 class="fw-bold text-center text-uppercase mt-2 text-white">MIS ÚLTIMOS TRABAJOS</h1>
-            <hr class="bg-white opacity-100 mx-auto">
+            <h1 class="fw-200 text-uppercase text-center text-white pt-3">Destacados</h1>
+            <hr class="w-70 mx-5 text-white">
         </div>
 
         <div class="container">
             <div class="row">
                 <!-- tarjeta 1 -->
                 <div class="col-12 col-sm-3 my-3">
-                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="card border-0">
                         <img src="assets/img/card1.jpg" alt="volcan">
-                        <div class="card-body">
-                            <h4 class=" card-title">Lorem, ipsum dolor sit amet.</h4>
+                        <div class="card-body bg-info">
+                            <div class="card-title">Lorem, ipsum dolor sit amet.</div>
                             <p class="card-text fw-light">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium sequi
-                                amet in praesentium sit numquam delectus, qui dignissimos, obcaecati sed corporis omnis
-                                autem ipsum. Corporis veniam quidem molestiae libero.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium
+                                sequi amet in praesentium sit numquam delectus, qui dignissimos, obcaecati sed
+                                corporis omnis autem ipsum. Corporis veniam quidem molestiae libero.
                             </p>
                         </div>
                     </div>
@@ -161,12 +163,12 @@
                 <div class="col-12 col-sm-3 my-3">
                     <div class="card border-0">
                         <img src="assets/img/card2.jpg" alt="Lago">
-                        <div class="card-body">
-                            <div class=" card-title">Consectetur adipisicing elit.</div>
+                        <div class="card-body bg-info">
+                            <div class="card-title">Consectetur adipisicing elit.</div>
                             <p class="card-text fw-light">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit quaerat
-                                corporis, et dignissimos tempore. Consequuntur, nihil ducimus! Veritatis excepturi eos
-                                repellendus incidunt odit, sapiente dolor illum mollitia molestias placeat.
+                                corporis, et dignissimos tempore. Consequuntur, nihil ducimus! Veritatis
+                                excepturi eos repellendus incidunt odit, sapiente dolor illum mollitia.
                             </p>
                         </div>
                     </div>
@@ -174,14 +176,14 @@
 
                 <!-- tarjeta 3 -->
                 <div class="col-12 col-sm-3 my-3">
-                    <div class="card border-0">
+                    <div id="" class="card border-0">
                         <img src="assets/img/card3.jpg" alt="Salar">
-                        <div class="card-body">
+                        <div class="card-body bg-info">
                             <div class=" card-title">Doloribus, fuga tempora</div>
                             <p class="card-text fw-light">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam blanditiis
-                                dolores, non praesentium fugiat id nostrum magni ipsam, totam autem deserunt tempore aut
-                                delectus voluptatum culpa? Doloribus, fuga tempora.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam
+                                blanditiis dolores, non praesentium fugiat id nostrum magni ipsam, totam autem deserunt
+                                tempore aut delectus voluptatum culpa? Doloribus, fuga tempora.
                             </p>
                         </div>
                     </div>
@@ -191,12 +193,12 @@
                 <div class="col-12 col-sm-3 my-3">
                     <div class="card border-0">
                         <img src="assets/img/card4.jpg" alt="Bosque">
-                        <div class="card-body">
-                            <div class=" card-title">Ipsum ab possimus totam adipisci.</div>
+                        <div class="card-body bg-info">
+                            <div class=" card-title">Ipsum ab possimus totam.</div>
                             <p class="card-text fw-light">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, consequatur explicabo,
-                                reiciendis, ipsum ab possimus totam quo adipisci nemo repellendus similique debitis
-                                dolores ullam nulla modi! Fugiat est aperiam culpa.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, consequatur
+                                explicabo, reiciendis, ipsum ab possimus totam quo adipisci nemo repellendus similique
+                                debitis dolores ullam nulla modi! Fugiat est aperiam culpa.
                             </p>
                         </div>
                     </div>
@@ -207,79 +209,100 @@
 
 
 
-
+    <!-- sección Contacto -->
     <!-- py padding vertical, px padding horizontal -->
-    <section id="Contacto" class="container py-5 text-center">
+    <section id="Contacto" class="formulario py-5 text-center">
         <div>
-            <h1 class="fw-bold text-uppercase text-center pt-3">CONTACTO</h1>
-            <hr class="w-70 mx-auto">
+            <h1 class="fw-200 text-uppercase text-center text-white pt-3">CONTACTO</h1>
+            <hr class="w-70 mx-5 text-white">
         </div>
 
         <div>
-            
-            <a target="_blanck" href="https://lkw4lah01de.typeform.com/to/WjcOEIPn">
-                <button class="btn bg-secondary text-white">
-                    Comenzar
-                </button>
-            </a>
+            <form class="mx-5 ">
+
+                <div class=" my-4">
+                    <h2 class="datos">Nombre</h2>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Ingrese su nombre">
+                </div>
+                <div class=" my-4">
+                    <h2 class="datos">Correo Electrónico</h2>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <input type="email" class="form-control" id="inputPassword2" placeholder="Ingrese su correo">
+                </div>
+                <div class=" mt-4">
+                    <h2 class="datos"> Mensaje</h2>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <label for="inputPassword2" class="visually-hidden"></label>
+                    <textarea name="Mensaje" class="form-control" id="Mensaje" cols="135" rows="10"
+                        placeholder="Escriba su mensaje"></textarea>
+                </div>
+                <!-- no funciona bien, lo toma como tooltip no como popover -->
+
+                <div class="boton">
+                    <button type="button" class="btn btn-lg btn-info mt-2 mb-5 text-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Enviar
+                    </button>
+                </div>
+            </form>
         </div>
-    </section>
 
 
+        <!-- sección footer -->
+        <footer id="footer" class="text-center pt-3 text-white bg-info pb-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <h1 class="text-uppercase fa-2x">VIAJES CHILE</h1>
+                    </div>
 
-    <footer id="footer" class="text-center py-5 text-white">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-sm-6">
-                    <h1 class="fw-bold text-uppercase">VIAJES CHILE</h1>
+                    <div class="col-12 col-sm-6 fa-2x">
+                        <a href="">
+                            <i class="fa-brands fa-github-square mx-2"></i>
+                        </a>
+                        <a href=""><i class="fa-brands fa-linkedin mx-2"></i>
+                        </a>
+                        <a href=""> <i class="fa-brands fa-twitter-square mx-2"></i>
+                        </a>
+                        <a href=""> <i class="fa-brands fa-facebook-square mx-2"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col-12 col-sm-6 fa-3x">
-                    <a href="">
-                        <i class="fa-brands fa-github-square mx-2"></i>
-                    </a>
-                    <a href=""><i class="fa-brands fa-linkedin mx-2"></i>
-                    </a>
-                    <a href=""> <i class="fa-brands fa-twitter-square mx-2"></i>
-                    </a>
-                    <a href=""> <i class="fa-brands fa-facebook-square mx-2"></i>
-                    </a>
-                </div>
-
             </div>
+        </footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-    </footer>
-
-
-    <!-- Modal, se pega una porción del cófdigo en el elemento que queremos afectar, y lo demás viene despuéz del footer y antes del script.
-    Se puede modificar como todo lo de Bootstrap. Aparecerá a la orden de click -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
+        <div class="modal-body">
+          Tu solicitud ha sido enviada exitosamente.
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info">Cerrar</button>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
+        <!-- sección script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/index.js"></script>
 </body>
 
 </html>
