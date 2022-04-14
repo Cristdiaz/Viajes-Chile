@@ -6,6 +6,10 @@
      scroll-behavior: smooth;
  }
 
+hr {
+    
+}
+
 
 body {
     background-color: black;
@@ -87,6 +91,7 @@ body {
 
 .boton {
     text-align: start;
+    box-shadow: 0px 6px 0px;
 }
 
 

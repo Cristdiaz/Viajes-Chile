@@ -6,7 +6,11 @@ $(document).ready(function () {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
-
+    $(document).ready(function(){
+        $(".card-title").click(function(){
+          $(this).hide();
+        });
+      });
 
 
 })
